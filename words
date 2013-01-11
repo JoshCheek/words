@@ -1,0 +1,56 @@
+#!/usr/bin/env ruby
+
+$LOAD_PATH.unshift "/Users/joshcheek/code/i_like_mustaches/lib"
+
+require 'i_like_mustaches'
+
+# add a word type?
+
+words = ILikeMustaches.new do |words|
+  words.description = "A list of words I like and don't want to forget"
+
+  words.quick_note "equanimity"    , "mental calmness, composure, and evenness of temper, esp. in a difficult situation: she accepted both the good and the bad"
+  words.quick_note "vernacular"    , "the terminology used by people belonging to a specified group or engaging in a specialized activity"
+  words.quick_note "repudiate"     , "refuse to accept or be associated with"
+  words.quick_note "vet"           , "make a careful and critical examination of"
+  words.quick_note "perennial"     , "lasting or existing for a long or apparently infinite time; enduring or continually recurring; apparently permanently engaged in a specified role or way of life"
+  words.quick_note "iconoclast"    , "a person who attacks cherished beliefs or institutions."
+  words.quick_note "ignominy"      , "public shame or disgrace"
+  words.quick_note "remonstrate"   , "make a forcefully reproachful protest"
+  words.quick_note "maudlin"       , "self-pityingly or tearfully sentimental, often through drunkenness"
+  words.quick_note "sardonic"      , "grimly mocking or cynical"
+  words.quick_note "perfidy"       , "deceitfulness; untrustworthiness."
+  words.quick_note "magnanimously" , "very generous or forgiving, esp. toward a rival or someone less powerful than oneself."
+  words.quick_note "brigand"       , "a member of a gang that ambushes and robs people in forests and mountains."
+  words.quick_note "urbane"        , "(of a person, esp. a man) suave, courteous, and refined in manner."
+  words.quick_note "vagabond"      , "a person who wanders from place to place without a home or job"
+  words.quick_note "monomania"     , "exaggerated or obsessive enthusiasm for or preoccupation with one thing"
+  words.quick_note "humbug"        , "deceptive or false talk or behavior"
+  words.quick_note "reprobate"     , "an unprincipled person (often used humorously or affectionately).\n"\
+                                     "Christian Theology, archaic (esp. in Calvinism) a sinner who is not of the elect and is predestined to damnation."
+  words.quick_note "ribald"        , "referring to sexual matters in an amusingly rude or irreverent way"
+  words.quick_note "lascivious"    , "feeling or revealing an overt and often offensive sexual desire"
+  words.quick_note "apotheosis"    , "the highest point in the development of something; culmination or climax\n"\
+                                     "the elevation of someone to divine status; deification."
+  words.quick_note "truculence"    , "eager or quick to argue or fight; aggressively defiant"
+  words.quick_note "coquette"      , "a woman who flirts."
+  words.quick_note "querulously"   , "complaining in a petulant or whining manner"
+  words.quick_note "consanguinity" , "relating to or denoting people descended from the same ancestor: consanguineous marriages"
+  words.quick_note "precipice"     , "a very steep rock face or cliff, typically a tall one"
+  words.quick_note "intromission"  , "the action or process of inserting the penis into the vagina in sexual intercourse"
+  words.quick_note "atavistic"     , "relating to or characterized by reversion to something ancient or ancestral"
+  words.quick_note "contrarian"    , "a person who opposes or rejects popular opinion, esp. in stock exchange dealing."
+  words.quick_note "petulant"      , "childishly sulky or bad-tempered"
+  words.quick_note "temerity"      , "excessive confidence or boldness; audacity"
+  words.quick_note "ideation"      , "the formation of ideas or concepts"
+  words.quick_note "argot"         , "the jargon or slang of a particular group or class: teenage argot."
+  words.quick_note "aporia"        , "an irresolvable internal contradiction or logical disjunction in a text, argument, or theory"
+  words.quick_note "frenetic"      , "fast and energetic in a rather wild and uncontrolled way"
+  words.quick_note "expiate"       , "atone for (guilt or sin)"
+  words.quick_note "crib"          , "informal copy (another person's work) illicitly or without acknowledgment"
+  words.quick_note "meliorative"   , "to make better, opposite of pejorative"
+  words.quick_note "buttonhole"    , "to detain in conversation by or as if by holding on to the outer garments of", "I'm sorry I'm late. I was buttonholed by a coworker just as I was leaving my office."
+
+end
+
+exit ILikeMustaches::Console.new(words).call
