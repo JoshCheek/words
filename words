@@ -50,7 +50,10 @@ words = ILikeMustaches.new do |words|
   words.quick_note "crib"          , "informal copy (another person's work) illicitly or without acknowledgment"
   words.quick_note "meliorative"   , "to make better, opposite of pejorative"
   words.quick_note "buttonhole"    , "to detain in conversation by or as if by holding on to the outer garments of", "I'm sorry I'm late. I was buttonholed by a coworker just as I was leaving my office."
-
+  words.quick_note "taciturn"      , "reserved or uncommunicative in speech; saying little."
+  words.quick_note "disparage"     , "regard or represent as being of little worth"
+  words.quick_note "punitive"      , "inflicting or intended as punishment"
+  words.quick_note "ostentatious"  , "characterized by vulgar or pretentious display; designed to impress or attract notice"
 end
 
 exit ILikeMustaches::Console.new(words).call
