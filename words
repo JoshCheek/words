@@ -54,6 +54,7 @@ words = ILikeMustaches.new do |words|
   words.quick_note "disparage"     , "regard or represent as being of little worth"
   words.quick_note "punitive"      , "inflicting or intended as punishment"
   words.quick_note "ostentatious"  , "characterized by vulgar or pretentious display; designed to impress or attract notice"
+  words.quick_note "adjudicate"    , "make a formal judgment or decision about a problem or disputed matter: the committee adjudicates on all betting disputes"
 end
 
 exit ILikeMustaches::Console.new(words).call
