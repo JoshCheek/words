@@ -66,6 +66,7 @@ words = ILikeMustaches.new do |words|
   words.quick_note "proclivity"    , "a tendency to choose or do something regularly; an inclination or predisposition toward a particular thing"
   words.quick_note "erudite"       , "having or showing great knowledge or learning"
   words.quick_note "trop"          , "a significant or recurrent theme; a motif"
+  words.quick_note "ostentatious"  , "characterized by vulgar or pretentious display; designed to impress or attract notice"
 end
 
 exit ILikeMustaches::Console.new(words).call
