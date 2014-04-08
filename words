@@ -68,6 +68,7 @@ words = ILikeMustaches.new do |words|
   words.quick_note "trop"          , "a significant or recurrent theme; a motif"
   words.quick_note "ostentatious"  , "characterized by vulgar or pretentious display; designed to impress or attract notice"
   words.quick_note "scalawag"      , "a person who behaves badly but in an amusingly mischievous rather than harmful way"
+  words.quick_note "umbrage"       , "offense or annoyance"
 end
 
 exit ILikeMustaches::Console.new(words).call
