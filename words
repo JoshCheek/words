@@ -65,7 +65,7 @@ words = ILikeMustaches.new do |words|
   DEF
   words.quick_note "proclivity"    , "a tendency to choose or do something regularly; an inclination or predisposition toward a particular thing"
   words.quick_note "erudite"       , "having or showing great knowledge or learning"
-  words.quick_note "trop"          , "a significant or recurrent theme; a motif"
+  words.quick_note "trope"         , "a significant or recurrent theme; a motif"
   words.quick_note "ostentatious"  , "characterized by vulgar or pretentious display; designed to impress or attract notice"
   words.quick_note "scalawag"      , "a person who behaves badly but in an amusingly mischievous rather than harmful way"
   words.quick_note "umbrage"       , "offense or annoyance"
