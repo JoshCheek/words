@@ -56,7 +56,7 @@ words = ILikeMustaches.new do |words|
   words.quick_note "ostentatious"  , "characterized by vulgar or pretentious display; designed to impress or attract notice"
   words.quick_note "adjudicate"    , "make a formal judgment or decision about a problem or disputed matter: the committee adjudicates on all betting disputes"
   words.quick_note "banal"         , "so lacking in originality as to be obvious and boring"
-  words.quick_note "culpible"      , "deserving blame"
+  words.quick_note "culpable"      , "deserving blame"
   words.quick_note "gerrymander"   , "manipulate the boundaries of (an electoral constituency) so as to favor one party or class."
   words.quick_note "inundated"     , "overwhelm (someone) with things or people to be dealt with"
   words.quick_note "stricture"     , <<-DEF
