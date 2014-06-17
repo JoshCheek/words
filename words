@@ -88,9 +88,7 @@ class CommandLineNotes
   end
 end
 
-# add a word type?
 
-# define and invoke the specific notes
 if $0 =~ /rspec/
   describe CommandLineNotes do
     def bin(notes, argv)
@@ -246,7 +244,7 @@ else
     words.note "ostentatious"  , "characterized by vulgar or pretentious display; designed to impress or attract notice"
     words.note "adjudicate"    , "make a formal judgment or decision about a problem or disputed matter: the committee adjudicates on all betting disputes"
     words.note "banal"         , "so lacking in originality as to be obvious and boring"
-    words.note "culpible"      , "deserving blame"
+    words.note "culpable"      , "deserving blame"
     words.note "gerrymander"   , "manipulate the boundaries of (an electoral constituency) so as to favor one party or class."
     words.note "inundated"     , "overwhelm (someone) with things or people to be dealt with"
     words.note "stricture"     , <<-DEF
@@ -255,7 +253,7 @@ else
     DEF
     words.note "proclivity"    , "a tendency to choose or do something regularly; an inclination or predisposition toward a particular thing"
     words.note "erudite"       , "having or showing great knowledge or learning"
-    words.note "trop"          , "a significant or recurrent theme; a motif"
+    words.note "trope"         , "a significant or recurrent theme; a motif"
     words.note "ostentatious"  , "characterized by vulgar or pretentious display; designed to impress or attract notice"
     words.note "scalawag"      , "a person who behaves badly but in an amusingly mischievous rather than harmful way"
     words.note "umbrage"       , "offense or annoyance"
