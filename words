@@ -1,75 +1,266 @@
 #!/usr/bin/env ruby
 
-$LOAD_PATH.unshift "/Users/joshcheek/code/i_like_mustaches/lib"
+class CommandLineNotes
 
-require 'i_like_mustaches'
+  Color1  = "\e[37m"
+  Color2  = "\e[32m"
+  NoColor = "\e[0m"
+
+  class Binary
+    attr_accessor :notes, :argv
+    def initialize(notes, argv)
+      self.notes, self.argv = notes, argv
+    end
+
+    def call
+      if argv == ['-h'] || argv == ['--help']
+        @stdout = help_screen
+      else
+        @stdout = map_with_index(notes_to_print) { |note, note_index|
+                    format_note note, note_index
+                  }.join("\n") << NoColor
+      end
+    end
+
+    def stdout
+      call
+      @stdout
+    end
+
+    private
+
+    def help_screen
+      "Usage: #{$0} [filters]\n"\
+      "\n"\
+      "#{notes.description}"
+    end
+
+    def notes_to_print
+      @notes_to_print ||= notes.notes.
+                                select { |values|
+                                 filters.all? { |filter|
+                                   values.any? { |value| value =~ filter }
+                                  }
+                                }
+    end
+
+    def format_note(note, note_index)
+      key         = note[0]
+      value       = note[1]
+      map_with_index(value.each_line) { |value_line, line_index|
+        if line_index.zero?
+          "#{note_index % 2== 0 ? Color1 : Color2}#{key.ljust offset_to_value}  #{value_line.chomp}"
+        else
+          "#{' '*offset_to_value}  #{value_line.chomp}"
+        end
+      }.join("\n")
+    end
+
+    def offset_to_value
+      @offset ||= notes_to_print.map(&:first).max_by(&:size).size
+    end
+
+    def filters
+      @filters ||= argv.map { |arg| Regexp.new arg, Regexp::IGNORECASE }
+    end
+
+    # 1.8 doesn't have .with_index
+    def map_with_index(collection, &block)
+      index = -1
+      collection.map do |element|
+        index += 1
+        block.call element, index
+      end
+    end
+  end
+
+  attr_accessor :description, :notes
+
+  def initialize
+    @notes = []
+    yield self
+  end
+
+  def note(key, value, *tags)
+    leading_whitespace = value[/\A */]
+    value = value.gsub(/^#{leading_whitespace}/, '')
+    notes << [key, value, *tags]
+  end
+end
 
 # add a word type?
 
-words = ILikeMustaches.new do |words|
-  words.description = "A list of words I like and don't want to forget"
+# define and invoke the specific notes
+if $0 =~ /rspec/
+  describe CommandLineNotes do
+    def bin(notes, argv)
+      CommandLineNotes::Binary.new notes, argv
+    end
 
-  words.quick_note "equanimity"    , "mental calmness, composure, and evenness of temper, esp. in a difficult situation: she accepted both the good and the bad"
-  words.quick_note "vernacular"    , "the terminology used by people belonging to a specified group or engaging in a specialized activity"
-  words.quick_note "repudiate"     , "refuse to accept or be associated with"
-  words.quick_note "vet"           , "make a careful and critical examination of"
-  words.quick_note "perennial"     , "lasting or existing for a long or apparently infinite time; enduring or continually recurring; apparently permanently engaged in a specified role or way of life"
-  words.quick_note "iconoclast"    , "a person who attacks cherished beliefs or institutions."
-  words.quick_note "ignominy"      , "public shame or disgrace"
-  words.quick_note "remonstrate"   , "make a forcefully reproachful protest"
-  words.quick_note "maudlin"       , "self-pityingly or tearfully sentimental, often through drunkenness"
-  words.quick_note "sardonic"      , "grimly mocking or cynical"
-  words.quick_note "perfidy"       , "deceitfulness; untrustworthiness."
-  words.quick_note "magnanimously" , "very generous or forgiving, esp. toward a rival or someone less powerful than oneself."
-  words.quick_note "brigand"       , "a member of a gang that ambushes and robs people in forests and mountains."
-  words.quick_note "urbane"        , "(of a person, esp. a man) suave, courteous, and refined in manner."
-  words.quick_note "vagabond"      , "a person who wanders from place to place without a home or job"
-  words.quick_note "monomania"     , "exaggerated or obsessive enthusiasm for or preoccupation with one thing"
-  words.quick_note "humbug"        , "deceptive or false talk or behavior"
-  words.quick_note "reprobate"     , "an unprincipled person (often used humorously or affectionately).\n"\
-                                     "Christian Theology, archaic (esp. in Calvinism) a sinner who is not of the elect and is predestined to damnation."
-  words.quick_note "ribald"        , "referring to sexual matters in an amusingly rude or irreverent way"
-  words.quick_note "lascivious"    , "feeling or revealing an overt and often offensive sexual desire"
-  words.quick_note "apotheosis"    , "the highest point in the development of something; culmination or climax\n"\
-                                     "the elevation of someone to divine status; deification."
-  words.quick_note "truculence"    , "eager or quick to argue or fight; aggressively defiant"
-  words.quick_note "coquette"      , "a woman who flirts."
-  words.quick_note "querulously"   , "complaining in a petulant or whining manner"
-  words.quick_note "consanguinity" , "relating to or denoting people descended from the same ancestor: consanguineous marriages"
-  words.quick_note "precipice"     , "a very steep rock face or cliff, typically a tall one"
-  words.quick_note "intromission"  , "the action or process of inserting the penis into the vagina in sexual intercourse"
-  words.quick_note "atavistic"     , "relating to or characterized by reversion to something ancient or ancestral"
-  words.quick_note "contrarian"    , "a person who opposes or rejects popular opinion, esp. in stock exchange dealing."
-  words.quick_note "petulant"      , "childishly sulky or bad-tempered"
-  words.quick_note "temerity"      , "excessive confidence or boldness; audacity"
-  words.quick_note "ideation"      , "the formation of ideas or concepts"
-  words.quick_note "argot"         , "the jargon or slang of a particular group or class: teenage argot."
-  words.quick_note "aporia"        , "an irresolvable internal contradiction or logical disjunction in a text, argument, or theory"
-  words.quick_note "frenetic"      , "fast and energetic in a rather wild and uncontrolled way"
-  words.quick_note "expiate"       , "atone for (guilt or sin)"
-  words.quick_note "crib"          , "informal copy (another person's work) illicitly or without acknowledgment"
-  words.quick_note "meliorative"   , "to make better, opposite of pejorative"
-  words.quick_note "buttonhole"    , "to detain in conversation by or as if by holding on to the outer garments of", "I'm sorry I'm late. I was buttonholed by a coworker just as I was leaving my office."
-  words.quick_note "taciturn"      , "reserved or uncommunicative in speech; saying little."
-  words.quick_note "disparage"     , "regard or represent as being of little worth"
-  words.quick_note "punitive"      , "inflicting or intended as punishment"
-  words.quick_note "ostentatious"  , "characterized by vulgar or pretentious display; designed to impress or attract notice"
-  words.quick_note "adjudicate"    , "make a formal judgment or decision about a problem or disputed matter: the committee adjudicates on all betting disputes"
-  words.quick_note "banal"         , "so lacking in originality as to be obvious and boring"
-  words.quick_note "culpible"      , "deserving blame"
-  words.quick_note "gerrymander"   , "manipulate the boundaries of (an electoral constituency) so as to favor one party or class."
-  words.quick_note "inundated"     , "overwhelm (someone) with things or people to be dealt with"
-  words.quick_note "stricture"     , <<-DEF
-    1. a restriction on a person or activity
-    2. a sternly critical or censorious remark or instruction
-  DEF
-  words.quick_note "proclivity"    , "a tendency to choose or do something regularly; an inclination or predisposition toward a particular thing"
-  words.quick_note "erudite"       , "having or showing great knowledge or learning"
-  words.quick_note "trop"          , "a significant or recurrent theme; a motif"
-  words.quick_note "ostentatious"  , "characterized by vulgar or pretentious display; designed to impress or attract notice"
-  words.quick_note "scalawag"      , "a person who behaves badly but in an amusingly mischievous rather than harmful way"
-  words.quick_note "umbrage"       , "offense or annoyance"
-  words.quick_note "interlocutor"  , "a person who takes part in a dialogue or conversation."
+    it 'prints the description if you give it -h' do
+      notes = CommandLineNotes.new { |cln| cln.description = 'mah description' }
+      bin(notes, ['-h']).stdout.should include 'mah description'
+      bin(notes, ['--help']).stdout.should include 'mah description'
+    end
+
+    it 'prints all notes by default' do
+      notes = CommandLineNotes.new do |cln|
+        cln.note 'key1', 'value1'
+        cln.note 'key2', 'value2'
+      end
+      bin(notes, []).stdout.should include 'key1'
+      bin(notes, []).stdout.should include 'key2'
+    end
+
+    it 'selects notes whose key matches when given an arg' do
+      notes = CommandLineNotes.new do |cln|
+        cln.note 'key1', 'value1'
+        cln.note 'key2', 'value2'
+      end
+      bin(notes, ['key1']).stdout.should include 'key1'
+    end
+
+    it 'selects notes whose value matches when given an arg' do
+      notes = CommandLineNotes.new do |cln|
+        cln.note 'key1', 'value1'
+        cln.note 'key2', 'value2'
+      end
+      bin(notes, ['value1']).stdout.should include 'key1'
+    end
+
+    it 'selects notes whose tags match when given an arg' do
+      notes = CommandLineNotes.new do |cln|
+        cln.note 'key1', 'value1', 'tag1'
+        cln.note 'key2', 'value2', 'tag2'
+      end
+      bin(notes, ['tag1']).stdout.should include 'key1'
+    end
+
+    it 'treats multiple arguments as successive filters' do
+      notes = CommandLineNotes.new do |cln|
+        cln.note 'key1', 'value1', 'tag1'
+        cln.note 'key2', 'value2', 'tag1', 'tag2'
+      end
+      bin(notes, ['tag1', 'tag2']).stdout.should_not include 'key1'
+      bin(notes, ['tag1', 'tag2']).stdout.should include 'key2'
+    end
+
+    it 'does not print the tags' do
+      notes = CommandLineNotes.new do |cln|
+        cln.note 'key1', 'value1', 'tag1'
+      end
+      bin(notes, []).stdout.should_not include 'tag1'
+    end
+
+    it 'aligns the notes such that values line up' do
+      notes = CommandLineNotes.new do |cln|
+        cln.note 'k',   'value1'
+        cln.note 'key', 'value2'
+      end
+      spacing1, spacing2, *other_spacing = bin(notes, []).stdout.scan(/ +/)
+      other_spacing.should == []
+      spacing1.size.should == spacing2.size + 2
+    end
+
+    def no_ansi(string)
+      string.gsub(/\e\[.*?m/, '')
+    end
+
+    it 'prints notes whose value has multiple lines on multiple lines (aligned)' do
+      notes = CommandLineNotes.new do |cln|
+        cln.note 'k',   'value1'
+        cln.note 'key', <<-VALUE
+          value2.1  # should be at same indentation as value1
+           value2.2 # should be 1 space deeper than value 2.1
+        VALUE
+      end
+      line1, line2, line3, *other_lines = no_ansi(bin(notes, []).stdout).scan(/^.*?v/)
+      other_lines.should == []
+      line1.size.should == line2.size
+      line3.size.should == line2.size + 1
+    end
+
+    it 'prints every other line coloured' do
+      notes = CommandLineNotes.new do |cln|
+        cln.note 'key1', 'value1'
+        cln.note 'key2', 'value2'
+        cln.note 'key3', "value3.1\nalue3.2"
+      end
+      line1, line2, line3, line4, *rest = bin(notes, []).stdout.each_line.to_a
+      rest.should == []
+      line1.should start_with CommandLineNotes::Color1
+      line2.should start_with CommandLineNotes::Color2
+      line3.should start_with CommandLineNotes::Color1
+      line4.should_not start_with CommandLineNotes::Color2 # b/c it's part of note3
+      line4.should end_with CommandLineNotes::NoColor
+    end
+  end
+else
+  words = CommandLineNotes.new do |words|
+    words.description = "A list of words I like and don't want to forget"
+
+    words.note "equanimity"    , "mental calmness, composure, and evenness of temper, esp. in a difficult situation: she accepted both the good and the bad"
+    words.note "vernacular"    , "the terminology used by people belonging to a specified group or engaging in a specialized activity"
+    words.note "repudiate"     , "refuse to accept or be associated with"
+    words.note "vet"           , "make a careful and critical examination of"
+    words.note "perennial"     , "lasting or existing for a long or apparently infinite time; enduring or continually recurring; apparently permanently engaged in a specified role or way of life"
+    words.note "iconoclast"    , "a person who attacks cherished beliefs or institutions."
+    words.note "ignominy"      , "public shame or disgrace"
+    words.note "remonstrate"   , "make a forcefully reproachful protest"
+    words.note "maudlin"       , "self-pityingly or tearfully sentimental, often through drunkenness"
+    words.note "sardonic"      , "grimly mocking or cynical"
+    words.note "perfidy"       , "deceitfulness; untrustworthiness."
+    words.note "magnanimously" , "very generous or forgiving, esp. toward a rival or someone less powerful than oneself."
+    words.note "brigand"       , "a member of a gang that ambushes and robs people in forests and mountains."
+    words.note "urbane"        , "(of a person, esp. a man) suave, courteous, and refined in manner."
+    words.note "vagabond"      , "a person who wanders from place to place without a home or job"
+    words.note "monomania"     , "exaggerated or obsessive enthusiasm for or preoccupation with one thing"
+    words.note "humbug"        , "deceptive or false talk or behavior"
+    words.note "reprobate"     , "an unprincipled person (often used humorously or affectionately).\n"\
+                                       "Christian Theology, archaic (esp. in Calvinism) a sinner who is not of the elect and is predestined to damnation."
+    words.note "ribald"        , "referring to sexual matters in an amusingly rude or irreverent way"
+    words.note "lascivious"    , "feeling or revealing an overt and often offensive sexual desire"
+    words.note "apotheosis"    , "the highest point in the development of something; culmination or climax\n"\
+                                       "the elevation of someone to divine status; deification."
+    words.note "truculence"    , "eager or quick to argue or fight; aggressively defiant"
+    words.note "coquette"      , "a woman who flirts."
+    words.note "querulously"   , "complaining in a petulant or whining manner"
+    words.note "consanguinity" , "relating to or denoting people descended from the same ancestor: consanguineous marriages"
+    words.note "precipice"     , "a very steep rock face or cliff, typically a tall one"
+    words.note "intromission"  , "the action or process of inserting the penis into the vagina in sexual intercourse"
+    words.note "atavistic"     , "relating to or characterized by reversion to something ancient or ancestral"
+    words.note "contrarian"    , "a person who opposes or rejects popular opinion, esp. in stock exchange dealing."
+    words.note "petulant"      , "childishly sulky or bad-tempered"
+    words.note "temerity"      , "excessive confidence or boldness; audacity"
+    words.note "ideation"      , "the formation of ideas or concepts"
+    words.note "argot"         , "the jargon or slang of a particular group or class: teenage argot."
+    words.note "aporia"        , "an irresolvable internal contradiction or logical disjunction in a text, argument, or theory"
+    words.note "frenetic"      , "fast and energetic in a rather wild and uncontrolled way"
+    words.note "expiate"       , "atone for (guilt or sin)"
+    words.note "crib"          , "informal copy (another person's work) illicitly or without acknowledgment"
+    words.note "meliorative"   , "to make better, opposite of pejorative"
+    words.note "buttonhole"    , "to detain in conversation by or as if by holding on to the outer garments of", "I'm sorry I'm late. I was buttonholed by a coworker just as I was leaving my office."
+    words.note "taciturn"      , "reserved or uncommunicative in speech; saying little."
+    words.note "disparage"     , "regard or represent as being of little worth"
+    words.note "punitive"      , "inflicting or intended as punishment"
+    words.note "ostentatious"  , "characterized by vulgar or pretentious display; designed to impress or attract notice"
+    words.note "adjudicate"    , "make a formal judgment or decision about a problem or disputed matter: the committee adjudicates on all betting disputes"
+    words.note "banal"         , "so lacking in originality as to be obvious and boring"
+    words.note "culpible"      , "deserving blame"
+    words.note "gerrymander"   , "manipulate the boundaries of (an electoral constituency) so as to favor one party or class."
+    words.note "inundated"     , "overwhelm (someone) with things or people to be dealt with"
+    words.note "stricture"     , <<-DEF
+      1. a restriction on a person or activity
+      2. a sternly critical or censorious remark or instruction
+    DEF
+    words.note "proclivity"    , "a tendency to choose or do something regularly; an inclination or predisposition toward a particular thing"
+    words.note "erudite"       , "having or showing great knowledge or learning"
+    words.note "trop"          , "a significant or recurrent theme; a motif"
+    words.note "ostentatious"  , "characterized by vulgar or pretentious display; designed to impress or attract notice"
+    words.note "scalawag"      , "a person who behaves badly but in an amusingly mischievous rather than harmful way"
+    words.note "umbrage"       , "offense or annoyance"
+    words.note "interlocutor"  , "a person who takes part in a dialogue or conversation."
+  end
+  puts CommandLineNotes::Binary.new(words, ARGV).stdout
 end
 
-exit ILikeMustaches::Console.new(words).call
