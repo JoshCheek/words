@@ -260,6 +260,7 @@ else
     words.note "interlocutor"  , "a person who takes part in a dialogue or conversation."
     words.note "etiology"      , "the investigation or attribution of the cause or reason for something, often expressed in terms of historical or mythical explanation."
     words.note "valetudinarian", "a person who is unduly anxious about their health."
+    words.note "triage"        , "the process of determining the most important people or things from amongst a large number that require attention."
   end
   puts CommandLineNotes::Binary.new(words, ARGV).stdout
 end
