@@ -264,6 +264,8 @@ else
     words.note "abate"         , "(of something perceived as hostile, threatening, or negative) become less intense or widespread"
     words.note "incensed"      , "very angry; enraged: I was absolutely incensed."
     words.note "natty"         , "(esp. of a person or an article of clothing) smart and fashionable"
+    words.note "aphorism"      , "a pithy observation that contains a general truth, such as, \"if it ain't broke, don't fix it\""
+    words.note "epigram"       , "a pithy saying or remark expressing an idea in a clever and amusing way."
   end
   puts CommandLineNotes::Binary.new(words, ARGV).stdout
 end
