@@ -267,6 +267,7 @@ else
     words.note "aphorism"      , "a pithy observation that contains a general truth, such as, \"if it ain't broke, don't fix it\""
     words.note "epigram"       , "a pithy saying or remark expressing an idea in a clever and amusing way."
     words.note 'gaslighting'   , "manipulate (someone) by psychological means into questioning their own sanity"
+    words.note 'gestalt'       , "Psychology - an organized whole that is perceived as more than the sum of its parts."
   end
   puts CommandLineNotes::Binary.new(words, ARGV).stdout
 end
