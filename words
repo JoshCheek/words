@@ -268,6 +268,7 @@ else
     words.note "epigram"       , "a pithy saying or remark expressing an idea in a clever and amusing way."
     words.note 'gaslighting'   , "manipulate (someone) by psychological means into questioning their own sanity"
     words.note 'gestalt'       , "Psychology - an organized whole that is perceived as more than the sum of its parts."
+    words.note "razzing"       , "tease (someone) playfully"
   end
   puts CommandLineNotes::Binary.new(words, ARGV).stdout
 end
