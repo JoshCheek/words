@@ -269,6 +269,12 @@ else
     words.note 'gaslighting'   , "manipulate (someone) by psychological means into questioning their own sanity"
     words.note 'gestalt'       , "Psychology - an organized whole that is perceived as more than the sum of its parts."
     words.note "razzing"       , "tease (someone) playfully"
+    words.note "circumspect"   , "wary and unwilling to take risks"
+    words.note "exculpate"     , "show or declare that (someone) is not guilty of wrongdoing"
+    words.note "dilettante"    , "a person who cultivates an area of interest, such as the arts, without real commitment or knowledge"
+    words.note "synthesize"    , "combine (a number of things) into a coherent whole"
+    words.note "haptic"        , "of or relating to the sense of touch, in particular relating to the perception and manipulation of objects using the senses of touch and proprioception."
+    words.note "coalesce"      , "come together and form one mass or whole"
   end
   puts CommandLineNotes::Binary.new(words, ARGV).stdout
 end
