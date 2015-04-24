@@ -275,6 +275,7 @@ else
     words.note "synthesize"    , "combine (a number of things) into a coherent whole"
     words.note "haptic"        , "of or relating to the sense of touch, in particular relating to the perception and manipulation of objects using the senses of touch and proprioception."
     words.note "coalesce"      , "come together and form one mass or whole"
+    words.note "reconcile"     , "restore friendly relations between, cause to coexist in harmony, make (one account) consistent with another, settle (a disagreement), (reconcile someone to) make someone accept (a disagreeable or unwelcome thing)"
   end
   puts CommandLineNotes::Binary.new(words, ARGV).stdout
 end
