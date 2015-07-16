@@ -278,6 +278,8 @@ else
     words.note "reconcile"     , "restore friendly relations between, cause to coexist in harmony, make (one account) consistent with another, settle (a disagreement), (reconcile someone to) make someone accept (a disagreeable or unwelcome thing)"
     words.note "impetus"       , "the force that makes something happen or happen more quickly"
     words.note "simulacrum"    , "an unsatisfactory imitation or substitute: a bland simulacrum of American soul music"
+    words.note "anhedonia"     , "inability to feel pleasure"
+    words.note "precocious"    , "indicative of early development"
   end
   puts CommandLineNotes::Binary.new(words, ARGV).stdout
 end
