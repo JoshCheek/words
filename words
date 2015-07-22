@@ -280,6 +280,7 @@ else
     words.note "simulacrum"    , "an unsatisfactory imitation or substitute: a bland simulacrum of American soul music"
     words.note "anhedonia"     , "inability to feel pleasure"
     words.note "precocious"    , "indicative of early development"
+    words.note "prescient"     , "having or showing knowledge of events before they take place: a prescient warning."
   end
   puts CommandLineNotes::Binary.new(words, ARGV).stdout
 end
