@@ -286,7 +286,7 @@ else
     words.note "archetype"     , "a very typical example of a certain person or thing, an original that has been imitated"
     words.note "precipice"     , "a very steep rock face or cliff, sometimes figurative: the country was teetering on the precipice of political anarchy."
     words.note "propensity"    , "an inclination or natural tendency to behave in a particular way: a propensity for violence"
-    words.note 'lifspeki'      , "to show who you are to yourself and to the world through your actions (http://www.saltartists.com/the-most-dangerous-words/)"
+    words.note 'lifspeki'      , "to show who you are to yourself and to the world through your actions, “You Have Exactly One Life in Which to Do Everything You’ll Ever Do. Act Accordingly” (http://www.saltartists.com/the-most-dangerous-words/)"
   end
   puts CommandLineNotes::Binary.new(words, ARGV).stdout
 end
