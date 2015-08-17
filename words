@@ -281,6 +281,11 @@ else
     words.note "anhedonia"     , "inability to feel pleasure"
     words.note "precocious"    , "indicative of early development"
     words.note "prescient"     , "having or showing knowledge of events before they take place: a prescient warning."
+    words.note "palpable"      , "able to be touched or felt, (esp. of a feeling or atmosphere) so intense as to be almost touched or felt: a palpable sense of loss."
+    words.note "epitome"       , "(the epitome of) a person or thing that is a perfect example of a particular quality or type"
+    words.note "archetype"     , "a very typical example of a certain person or thing, an original that has been imitated"
+    words.note "precipice"     , "a very steep rock face or cliff, sometimes figurative: the country was teetering on the precipice of political anarchy."
+    words.note "propensity"    , "an inclination or natural tendency to behave in a particular way: a propensity for violence"
   end
   puts CommandLineNotes::Binary.new(words, ARGV).stdout
 end
