@@ -286,7 +286,12 @@ else
     words.note "archetype"     , "a very typical example of a certain person or thing, an original that has been imitated"
     words.note "precipice"     , "a very steep rock face or cliff, sometimes figurative: the country was teetering on the precipice of political anarchy."
     words.note "propensity"    , "an inclination or natural tendency to behave in a particular way: a propensity for violence"
-    words.note 'lifspeki'      , "to show who you are to yourself and to the world through your actions, “You Have Exactly One Life in Which to Do Everything You’ll Ever Do. Act Accordingly” (http://www.saltartists.com/the-most-dangerous-words/)"
+    words.note "lifspeki"      , "to show who you are to yourself and to the world through your actions, “You Have Exactly One Life in Which to Do Everything You’ll Ever Do. Act Accordingly” (http://www.saltartists.com/the-most-dangerous-words/)"
+    words.note "schadenfreude" , "Schadenfreude is pleasure derived from the misfortunes of others. This word is taken from German and literally means \"harm-joy\". It is the feeling of joy or pleasure when one sees another fail or suffer misfortune. It is also borrowed by some other languages"
+    words.note "cad"           , "a man who behaves dishonorably, esp. toward a woman"
+    words.note "canard"        , "an unfounded rumor or story: the old canard that LA is a cultural wasteland."
+    words.note 'ethos'         , "the characteristic spirit of a culture, era, or community as manifested in its beliefs and aspirations"
+    words.note 'polymathy'     , "a person of wide-ranging knowledge or learning."
   end
   puts CommandLineNotes::Binary.new(words, ARGV).stdout
 end
