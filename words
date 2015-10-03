@@ -292,6 +292,7 @@ else
     words.note "canard"        , "an unfounded rumor or story: the old canard that LA is a cultural wasteland."
     words.note 'ethos'         , "the characteristic spirit of a culture, era, or community as manifested in its beliefs and aspirations"
     words.note 'polymathy'     , "a person of wide-ranging knowledge or learning."
+    words.note 'ardent'        , "enthusiastic or passionate"
   end
   puts CommandLineNotes::Binary.new(words, ARGV).stdout
 end
