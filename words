@@ -293,6 +293,14 @@ else
     words.note 'ethos'         , "the characteristic spirit of a culture, era, or community as manifested in its beliefs and aspirations"
     words.note 'polymathy'     , "a person of wide-ranging knowledge or learning."
     words.note 'ardent'        , "enthusiastic or passionate"
+    words.note 'trepidation'   , "a feeling of fear or agitation about something that may happen: the men set off in fear and trepidation."
+    words.note 'benight'       , "envelop with social, intellectual, or moral darkness"
+    words.note 'moratorium'    , "a temporary prohibition of an activity"
+    words.note 'requisition'   , "the appropriation of goods, esp. for military or public use"
+    words.note 'confluence'    , "an act or process of merging: a major confluence of the world's financial markets."
+    words.note 'misgiving'     , "a feeling of doubt or apprehension about the outcome or consequences of something"
+    words.note 'myasthenia'    , "a condition causing abnormal weakness of certain muscles"
+    words.note 'impasto'       , "the process or technique of laying on paint or pigment thickly so that it stands out from a surface."
   end
   puts CommandLineNotes::Binary.new(words, ARGV).stdout
 end
