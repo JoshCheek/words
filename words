@@ -301,6 +301,11 @@ else
     words.note 'misgiving'     , "a feeling of doubt or apprehension about the outcome or consequences of something"
     words.note 'myasthenia'    , "a condition causing abnormal weakness of certain muscles"
     words.note 'impasto'       , "the process or technique of laying on paint or pigment thickly so that it stands out from a surface."
+    words.note 'catechism'     , "a series of fixed questions, answers, or precepts used for instruction in other situations."
+    words.note 'proclivity'    , 'a tendency to choose or do something regularly; an inclination or predisposition toward a particular thing: a proclivity for hard work.'
+    words.note 'vicissitudes'  , 'a change of circumstances or fortune, typically one that is unwelcome or unpleasant'
+    words.note 'leviathan'     , '(in biblical use) a sea monster, identified in different passages with the whale and the crocodile (e.g., Job 41, Ps. 74:14), and with the Devil (after Isa. 27:1).'
+    words.note 'trepidation'   , 'a feeling of fear or agitation about something that may happen'
   end
   puts CommandLineNotes::Binary.new(words, ARGV).stdout
 end
