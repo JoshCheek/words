@@ -198,7 +198,6 @@ else
     words.description = "A list of words I like and don't want to forget"
 
     words.note "equanimity"    , "mental calmness, composure, and evenness of temper, esp. in a difficult situation: she accepted both the good and the bad"
-    words.note "vernacular"    , "the terminology used by people belonging to a specified group or engaging in a specialized activity"
     words.note "repudiate"     , "refuse to accept or be associated with"
     words.note "vet"           , "make a careful and critical examination of"
     words.note "perennial"     , "lasting or existing for a long or apparently infinite time; enduring or continually recurring; apparently permanently engaged in a specified role or way of life"
@@ -231,7 +230,6 @@ else
     words.note "petulant"      , "childishly sulky or bad-tempered"
     words.note "temerity"      , "excessive confidence or boldness; audacity"
     words.note "ideation"      , "the formation of ideas or concepts"
-    words.note "argot"         , "the jargon or slang of a particular group or class: teenage argot."
     words.note "aporia"        , "an irresolvable internal contradiction or logical disjunction in a text, argument, or theory"
     words.note "frenetic"      , "fast and energetic in a rather wild and uncontrolled way"
     words.note "expiate"       , "atone for (guilt or sin)"
@@ -288,6 +286,7 @@ else
     words.note "propensity"    , "an inclination or natural tendency to behave in a particular way: a propensity for violence"
     words.note "lifspeki"      , "to show who you are to yourself and to the world through your actions, “You Have Exactly One Life in Which to Do Everything You’ll Ever Do. Act Accordingly” (http://www.saltartists.com/the-most-dangerous-words/)"
     words.note "schadenfreude" , "Schadenfreude is pleasure derived from the misfortunes of others. This word is taken from German and literally means \"harm-joy\". It is the feeling of joy or pleasure when one sees another fail or suffer misfortune. It is also borrowed by some other languages"
+    words.note "mudita"        , "sympathetic or unselfish joy, or joy in the good fortune of others. In Buddhism, mudita is significant as one of the Four Immeasurables -- https://twitter.com/austinkleon/status/662288435823022080"
     words.note "cad"           , "a man who behaves dishonorably, esp. toward a woman"
     words.note "canard"        , "an unfounded rumor or story: the old canard that LA is a cultural wasteland."
     words.note 'ethos'         , "the characteristic spirit of a culture, era, or community as manifested in its beliefs and aspirations"
@@ -306,6 +305,21 @@ else
     words.note 'vicissitudes'  , 'a change of circumstances or fortune, typically one that is unwelcome or unpleasant'
     words.note 'leviathan'     , '(in biblical use) a sea monster, identified in different passages with the whale and the crocodile (e.g., Job 41, Ps. 74:14), and with the Devil (after Isa. 27:1).'
     words.note 'trepidation'   , 'a feeling of fear or agitation about something that may happen'
+    words.note 'enervation'    , 'a feeling of being drained of energy or vitality'
+    words.note 'aphorism'      , 'a pithy observation that contains a general truth, such as, "if it ain\'t broke, don\'t fix it."',                   'aphorism', 'adage', 'maxim', 'proverb', 'platitude', 'fable'
+    words.note 'adage'         , 'a proverb or short statement expressing a general truth',                                                            'aphorism', 'adage', 'maxim', 'proverb', 'platitude', 'fable'
+    words.note 'maxim'         , 'a short, pithy statement expressing a general truth or rule of conduct',                                             'aphorism', 'adage', 'maxim', 'proverb', 'platitude', 'fable'
+    words.note 'proverb'       , 'a short pithy saying in general use, stating a general truth or piece of advice.',                                   'aphorism', 'adage', 'maxim', 'proverb', 'platitude', 'fable'
+    words.note 'platitude'     , 'a remark or statement, esp. one with a moral content, that has been used too often to be interesting or thoughtful', 'aphorism', 'adage', 'maxim', 'proverb', 'platitude', 'fable'
+    words.note 'fable'         , 'a short story, typically with animals as characters, conveying a moral.',                                            'aphorism', 'adage', 'maxim', 'proverb', 'platitude', 'fable'
+    words.note 'ennui'         , 'a feeling of listlessness and dissatisfaction arising from a lack of occupation or excitement.'
+    words.note 'performativity', '(my defn) speach which determines the identity of a person -- ie the language defines who the person is, rather than who they are dictating their language'
+    words.note 'malapropism'   , 'the mistaken use of a word in place of a similar-sounding one, often with unintentionally amusing effect, as in, for example, “dance a flamingo” (instead of flamenco).'
+    words.note 'illusory correlation', 'phenomenon of perceiving a relationship between variables even when no such relationship exists (https://en.wikipedia.org/wiki/Illusory_correlation)'
+
+    words.note "vernacular"    , "the terminology used by people belonging to a specified group or engaging in a specialized activity",  'argot', 'vernacular', 'lexicon'
+    words.note "argot"         , "the jargon or slang of a particular group or class: teenage argot.",                                   'argot', 'vernacular', 'lexicon'
+    words.note 'lexicon'       , 'the vocabulary of a person, language, or branch of knowledge'
   end
   puts CommandLineNotes::Binary.new(words, ARGV).stdout
 end
