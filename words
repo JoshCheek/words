@@ -197,139 +197,145 @@ else
   words = CommandLineNotes.new do |words|
     words.description = "A list of words I like and don't want to forget"
 
-    words.note "equanimity"    , "mental calmness, composure, and evenness of temper, esp. in a difficult situation: she accepted both the good and the bad"
-    words.note "repudiate"     , "refuse to accept or be associated with"
-    words.note "vet"           , "make a careful and critical examination of"
-    words.note "perennial"     , "lasting or existing for a long or apparently infinite time; enduring or continually recurring; apparently permanently engaged in a specified role or way of life"
-    words.note "iconoclast"    , "a person who attacks cherished beliefs or institutions."
-    words.note "ignominy"      , "public shame or disgrace"
-    words.note "remonstrate"   , "make a forcefully reproachful protest"
-    words.note "maudlin"       , "self-pityingly or tearfully sentimental, often through drunkenness"
-    words.note "sardonic"      , "grimly mocking or cynical"
-    words.note "perfidy"       , "deceitfulness; untrustworthiness."
-    words.note "magnanimously" , "very generous or forgiving, esp. toward a rival or someone less powerful than oneself."
-    words.note "brigand"       , "a member of a gang that ambushes and robs people in forests and mountains."
-    words.note "urbane"        , "(of a person, esp. a man) suave, courteous, and refined in manner."
-    words.note "vagabond"      , "a person who wanders from place to place without a home or job"
-    words.note "monomania"     , "exaggerated or obsessive enthusiasm for or preoccupation with one thing"
-    words.note "humbug"        , "deceptive or false talk or behavior"
-    words.note "reprobate"     , "an unprincipled person (often used humorously or affectionately).\n"\
-                                       "Christian Theology, archaic (esp. in Calvinism) a sinner who is not of the elect and is predestined to damnation."
-    words.note "ribald"        , "referring to sexual matters in an amusingly rude or irreverent way"
-    words.note "lascivious"    , "feeling or revealing an overt and often offensive sexual desire"
-    words.note "apotheosis"    , "the highest point in the development of something; culmination or climax\n"\
-                                       "the elevation of someone to divine status; deification."
-    words.note "truculence"    , "eager or quick to argue or fight; aggressively defiant"
-    words.note "coquette"      , "a woman who flirts."
-    words.note "querulously"   , "complaining in a petulant or whining manner"
-    words.note "consanguinity" , "relating to or denoting people descended from the same ancestor: consanguineous marriages"
-    words.note "precipice"     , "a very steep rock face or cliff, typically a tall one"
-    words.note "intromission"  , "the action or process of inserting the penis into the vagina in sexual intercourse"
-    words.note "atavistic"     , "relating to or characterized by reversion to something ancient or ancestral"
-    words.note "contrarian"    , "a person who opposes or rejects popular opinion, esp. in stock exchange dealing."
-    words.note "petulant"      , "childishly sulky or bad-tempered"
-    words.note "temerity"      , "excessive confidence or boldness; audacity"
-    words.note "ideation"      , "the formation of ideas or concepts"
-    words.note "aporia"        , "an irresolvable internal contradiction or logical disjunction in a text, argument, or theory"
-    words.note "frenetic"      , "fast and energetic in a rather wild and uncontrolled way"
-    words.note "expiate"       , "atone for (guilt or sin)"
-    words.note "crib"          , "informal copy (another person's work) illicitly or without acknowledgment"
-    words.note "meliorative"   , "to make better, opposite of pejorative"
-    words.note "buttonhole"    , "to detain in conversation by or as if by holding on to the outer garments of", "I'm sorry I'm late. I was buttonholed by a coworker just as I was leaving my office."
-    words.note "taciturn"      , "reserved or uncommunicative in speech; saying little."
-    words.note "disparage"     , "regard or represent as being of little worth"
-    words.note "punitive"      , "inflicting or intended as punishment"
-    words.note "ostentatious"  , "characterized by vulgar or pretentious display; designed to impress or attract notice"
-    words.note "adjudicate"    , "make a formal judgment or decision about a problem or disputed matter: the committee adjudicates on all betting disputes"
-    words.note "banal"         , "so lacking in originality as to be obvious and boring"
-    words.note "culpable"      , "deserving blame"
-    words.note "gerrymander"   , "manipulate the boundaries of (an electoral constituency) so as to favor one party or class."
-    words.note "inundated"     , "overwhelm (someone) with things or people to be dealt with"
-    words.note "stricture"     , <<-DEF
-      1. a restriction on a person or activity
-      2. a sternly critical or censorious remark or instruction
-    DEF
-    words.note "proclivity"    , "a tendency to choose or do something regularly; an inclination or predisposition toward a particular thing"
-    words.note "erudite"       , "having or showing great knowledge or learning"
-    words.note "trope"         , "a significant or recurrent theme; a motif"
-    words.note "ostentatious"  , "characterized by vulgar or pretentious display; designed to impress or attract notice"
-    words.note "scalawag"      , "a person who behaves badly but in an amusingly mischievous rather than harmful way"
-    words.note "umbrage"       , "offense or annoyance"
-    words.note "interlocutor"  , "a person who takes part in a dialogue or conversation."
-    words.note "etiology"      , "the investigation or attribution of the cause or reason for something, often expressed in terms of historical or mythical explanation."
-    words.note "valetudinarian", "a person who is unduly anxious about their health."
-    words.note "triage"        , "the process of determining the most important people or things from amongst a large number that require attention."
-    words.note "abate"         , "(of something perceived as hostile, threatening, or negative) become less intense or widespread"
-    words.note "incensed"      , "very angry; enraged: I was absolutely incensed."
-    words.note "natty"         , "(esp. of a person or an article of clothing) smart and fashionable"
-    words.note 'gaslighting'   , "manipulate (someone) by psychological means into questioning their own sanity"
-    words.note 'gestalt'       , "Psychology - an organized whole that is perceived as more than the sum of its parts."
-    words.note "razzing"       , "tease (someone) playfully"
-    words.note "circumspect"   , "wary and unwilling to take risks"
-    words.note "exculpate"     , "show or declare that (someone) is not guilty of wrongdoing"
-    words.note "dilettante"    , "a person who cultivates an area of interest, such as the arts, without real commitment or knowledge"
-    words.note "synthesize"    , "combine (a number of things) into a coherent whole"
-    words.note "haptic"        , "of or relating to the sense of touch, in particular relating to the perception and manipulation of objects using the senses of touch and proprioception."
-    words.note "coalesce"      , "come together and form one mass or whole"
-    words.note "reconcile"     , "restore friendly relations between, cause to coexist in harmony, make (one account) consistent with another, settle (a disagreement), (reconcile someone to) make someone accept (a disagreeable or unwelcome thing)"
-    words.note "impetus"       , "the force that makes something happen or happen more quickly"
-    words.note "simulacrum"    , "an unsatisfactory imitation or substitute: a bland simulacrum of American soul music"
-    words.note "anhedonia"     , "inability to feel pleasure"
-    words.note "precocious"    , "indicative of early development"
-    words.note "prescient"     , "having or showing knowledge of events before they take place: a prescient warning."
-    words.note "palpable"      , "able to be touched or felt, (esp. of a feeling or atmosphere) so intense as to be almost touched or felt: a palpable sense of loss."
-    words.note "epitome"       , "(the epitome of) a person or thing that is a perfect example of a particular quality or type"
-    words.note "archetype"     , "a very typical example of a certain person or thing, an original that has been imitated"
-    words.note "precipice"     , "a very steep rock face or cliff, sometimes figurative: the country was teetering on the precipice of political anarchy."
-    words.note "propensity"    , "an inclination or natural tendency to behave in a particular way: a propensity for violence"
-    words.note "lifspeki"      , "to show who you are to yourself and to the world through your actions, “You Have Exactly One Life in Which to Do Everything You’ll Ever Do. Act Accordingly” (http://www.saltartists.com/the-most-dangerous-words/)"
-    words.note "schadenfreude" , "Schadenfreude is pleasure derived from the misfortunes of others. This word is taken from German and literally means \"harm-joy\". It is the feeling of joy or pleasure when one sees another fail or suffer misfortune. It is also borrowed by some other languages"
-    words.note "mudita"        , "sympathetic or unselfish joy, or joy in the good fortune of others. In Buddhism, mudita is significant as one of the Four Immeasurables -- https://twitter.com/austinkleon/status/662288435823022080"
-    words.note "cad"           , "a man who behaves dishonorably, esp. toward a woman"
-    words.note "canard"        , "an unfounded rumor or story: the old canard that LA is a cultural wasteland."
-    words.note 'ethos'         , "the characteristic spirit of a culture, era, or community as manifested in its beliefs and aspirations"
-    words.note 'polymathy'     , "a person of wide-ranging knowledge or learning."
-    words.note 'ardent'        , "enthusiastic or passionate"
-    words.note 'trepidation'   , "a feeling of fear or agitation about something that may happen: the men set off in fear and trepidation."
-    words.note 'benight'       , "envelop with social, intellectual, or moral darkness"
-    words.note 'moratorium'    , "a temporary prohibition of an activity"
-    words.note 'requisition'   , "the appropriation of goods, esp. for military or public use"
-    words.note 'confluence'    , "an act or process of merging: a major confluence of the world's financial markets."
-    words.note 'misgiving'     , "a feeling of doubt or apprehension about the outcome or consequences of something"
-    words.note 'myasthenia'    , "a condition causing abnormal weakness of certain muscles"
-    words.note 'impasto'       , "the process or technique of laying on paint or pigment thickly so that it stands out from a surface."
-    words.note 'catechism'     , "a series of fixed questions, answers, or precepts used for instruction in other situations."
-    words.note 'proclivity'    , 'a tendency to choose or do something regularly; an inclination or predisposition toward a particular thing: a proclivity for hard work.'
-    words.note 'vicissitudes'  , 'a change of circumstances or fortune, typically one that is unwelcome or unpleasant'
-    words.note 'leviathan'     , '(in biblical use) a sea monster, identified in different passages with the whale and the crocodile (e.g., Job 41, Ps. 74:14), and with the Devil (after Isa. 27:1).'
-    words.note 'trepidation'   , 'a feeling of fear or agitation about something that may happen'
-    words.note 'enervation'    , 'a feeling of being drained of energy or vitality'
-    words.note "epigram"       , "a pithy saying or remark expressing an idea in a clever and amusing way."                                            'aphorism', 'adage', 'maxim', 'proverb', 'platitude', 'fable', 'epigram'
-    words.note 'aphorism'      , 'a pithy observation that contains a general truth, such as, "if it ain\'t broke, don\'t fix it."',                   'aphorism', 'adage', 'maxim', 'proverb', 'platitude', 'fable', 'epigram'
-    words.note 'adage'         , 'a proverb or short statement expressing a general truth',                                                            'aphorism', 'adage', 'maxim', 'proverb', 'platitude', 'fable', 'epigram'
-    words.note 'maxim'         , 'a short, pithy statement expressing a general truth or rule of conduct',                                             'aphorism', 'adage', 'maxim', 'proverb', 'platitude', 'fable', 'epigram'
-    words.note 'proverb'       , 'a short pithy saying in general use, stating a general truth or piece of advice.',                                   'aphorism', 'adage', 'maxim', 'proverb', 'platitude', 'fable', 'epigram'
-    words.note 'platitude'     , 'a remark or statement, esp. one with a moral content, that has been used too often to be interesting or thoughtful', 'aphorism', 'adage', 'maxim', 'proverb', 'platitude', 'fable', 'epigram'
-    words.note 'fable'         , 'a short story, typically with animals as characters, conveying a moral.',                                            'aphorism', 'adage', 'maxim', 'proverb', 'platitude', 'fable', 'epigram'
-    words.note 'ennui'         , 'a feeling of listlessness and dissatisfaction arising from a lack of occupation or excitement.'
-    words.note 'performativity', '(my defn) speach which determines the identity of a person -- ie the language defines who the person is, rather than who they are dictating their language'
-    words.note 'malapropism'   , 'the mistaken use of a word in place of a similar-sounding one, often with unintentionally amusing effect, as in, for example, “dance a flamingo” (instead of flamenco).'
-    words.note 'illusory correlation', 'phenomenon of perceiving a relationship between variables even when no such relationship exists (https://en.wikipedia.org/wiki/Illusory_correlation)'
-
-    words.note "vernacular"    , "the terminology used by people belonging to a specified group or engaging in a specialized activity",  'argot', 'vernacular', 'lexicon'
-    words.note "argot"         , "the jargon or slang of a particular group or class: teenage argot.",                                   'argot', 'vernacular', 'lexicon'
-    words.note 'lexicon'       , 'the vocabulary of a person, language, or branch of knowledge'
-
-    words.note 'qualia'        , 'the internal and subjective component of sense perceptions, arising from stimulation of the senses by phenomena.'
-    words.note 'quintessential', 'representing the most perfect or typical example of a quality or class'
-    words.note 'ape'           , 'imitate the behavior or manner of (someone or something), esp. in an absurd or unthinking way'
-    words.note 'explanatory gap', 'the difficulty that physicalist theories of mind have in explaining how physical properties give rise to the way things feel when they are experienced'
-    words.note 'consonance'    , <<-DEFINITIONS
+    words.note "abate"             , "(of something perceived as hostile, threatening, or negative) become less intense or widespread"
+    words.note "adage"             , "a proverb or short statement expressing a general truth" , "aphorism", "adage", "maxim", "proverb", "platitude", "fable", "epigram"
+    words.note "adjudicate"        , "make a formal judgment or decision about a problem or disputed matter: the committee adjudicates on all betting disputes"
+    words.note "anhedonia"         , "inability to feel pleasure"
+    words.note "ape"               , "imitate the behavior or manner of (someone or something), esp. in an absurd or unthinking way"
+    words.note "aphorism"          , "a pithy observation that contains a general truth, such as, \"if it ain't broke, don't fix it.\"" , "aphorism", "adage", "maxim", "proverb", "platitude", "fable", "epigram"
+    words.note "aporia"            , "an irresolvable internal contradiction or logical disjunction in a text, argument, or theory"
+    words.note "apotheosis"        , <<-DEFINITION
+      the highest point in the development of something; culmination or climax
+      the elevation of someone to divine status; deification.
+    DEFINITION
+    words.note "archetype"         , "a very typical example of a certain person or thing, an original that has been imitated"
+    words.note "ardent"            , "enthusiastic or passionate"
+    words.note "argot"             , "the jargon or slang of a particular group or class: teenage argot." , "argot", "vernacular", "lexicon"
+    words.note "atavistic"         , "relating to or characterized by reversion to something ancient or ancestral"
+    words.note "banal"             , "so lacking in originality as to be obvious and boring"
+    words.note "benight"           , "envelop with social, intellectual, or moral darkness"
+    words.note "brigand"           , "a member of a gang that ambushes and robs people in forests and mountains."
+    words.note "buttonhole"        , "to detain in conversation by or as if by holding on to the outer garments of" , "I'm sorry I'm late. I was buttonholed by a coworker just as I was leaving my office."
+    words.note "cad"               , "a man who behaves dishonorably, esp. toward a woman"
+    words.note "canard"            , "an unfounded rumor or story: the old canard that LA is a cultural wasteland."
+    words.note "catechism"         , "a series of fixed questions, answers, or precepts used for instruction in other situations."
+    words.note "circumspect"       , "wary and unwilling to take risks"
+    words.note "coalesce"          , "come together and form one mass or whole"
+    words.note "confluence"        , "an act or process of merging: a major confluence of the world's financial markets."
+    words.note "consanguinity"     , "relating to or denoting people descended from the same ancestor: consanguineous marriages"
+    words.note "consonance"        , <<-DEFINITION
       * Generally:  agreement or compatibility between opinions or actions.
       * In prosody: the recurrence of similar sounds (especially consonants) in close proximity.
       * In music:   the combination of notes that are in harmony with each other due to the relationship between their frequencies.
-    DEFINITIONS
-    words.note 'mendacious'   , 'not telling the truth; lying: mendacious propaganda.'
+    DEFINITION
+    words.note "contrarian"        , "a person who opposes or rejects popular opinion, esp. in stock exchange dealing."
+    words.note "coquette"          , "a woman who flirts."
+    words.note "crib"              , "informal copy (another person's work) illicitly or without acknowledgment"
+    words.note "culpable"          , "deserving blame"
+    words.note "dilettante"        , "a person who cultivates an area of interest, such as the arts, without real commitment or knowledge"
+    words.note "disparage"         , "regard or represent as being of little worth"
+    words.note "enervation"        , "a feeling of being drained of energy or vitality"
+    words.note "ennui"             , "a feeling of listlessness and dissatisfaction arising from a lack of occupation or excitement."
+    words.note "epigram"           , "a pithy saying or remark expressing an idea in a clever and amusing way.aphorism" , "adage", "maxim", "proverb", "platitude", "fable", "epigram"
+    words.note "epitome"           , "(the epitome of) a person or thing that is a perfect example of a particular quality or type"
+    words.note "equanimity"        , "mental calmness, composure, and evenness of temper, esp. in a difficult situation: she accepted both the good and the bad"
+    words.note "erudite"           , "having or showing great knowledge or learning"
+    words.note "ethos"             , "the characteristic spirit of a culture, era, or community as manifested in its beliefs and aspirations"
+    words.note "etiology"          , "the investigation or attribution of the cause or reason for something, often expressed in terms of historical or mythical explanation."
+    words.note "exculpate"         , "show or declare that (someone) is not guilty of wrongdoing"
+    words.note "expiate"           , "atone for (guilt or sin)"
+    words.note "explanatory gap"   , "the difficulty that physicalist theories of mind have in explaining how physical properties give rise to the way things feel when they are experienced"
+    words.note "fable"             , "a short story, typically with animals as characters, conveying a moral." , "aphorism", "adage", "maxim", "proverb", "platitude", "fable", "epigram"
+    words.note "frenetic"          , "fast and energetic in a rather wild and uncontrolled way"
+    words.note "gaslighting"       , "manipulate (someone) by psychological means into questioning their own sanity"
+    words.note "gerrymander"       , "manipulate the boundaries of (an electoral constituency) so as to favor one party or class."
+    words.note "gestalt"           , "Psychology - an organized whole that is perceived as more than the sum of its parts."
+    words.note "haptic"            , "of or relating to the sense of touch, in particular relating to the perception and manipulation of objects using the senses of touch and proprioception."
+    words.note "humbug"            , "deceptive or false talk or behavior"
+    words.note "iconoclast"        , "a person who attacks cherished beliefs or institutions."
+    words.note "ideation"          , "the formation of ideas or concepts"
+    words.note "ignominy"          , "public shame or disgrace"
+    words.note "illusory correlation", "phenomenon of perceiving a relationship between variables even when no such relationship exists (https://en.wikipedia.org/wiki/Illusory_correlation)"
+    words.note "impasto"           , "the process or technique of laying on paint or pigment thickly so that it stands out from a surface."
+    words.note "impetus"           , "the force that makes something happen or happen more quickly"
+    words.note "incensed"          , "very angry; enraged: I was absolutely incensed."
+    words.note "interlocutor"      , "a person who takes part in a dialogue or conversation."
+    words.note "intromission"      , "the action or process of inserting the penis into the vagina in sexual intercourse"
+    words.note "inundated"         , "overwhelm (someone) with things or people to be dealt with"
+    words.note "lascivious"        , "feeling or revealing an overt and often offensive sexual desire"
+    words.note "leviathan"         , "(in biblical use) a sea monster, identified in different passages with the whale and the crocodile (e.g., Job 41, Ps. 74:14), and with the Devil (after Isa. 27:1)."
+    words.note "lexicon"           , "the vocabulary of a person, language, or branch of knowledge"
+    words.note "lifspeki"          , "to show who you are to yourself and to the world through your actions, “You Have Exactly One Life in Which to Do Everything You’ll Ever Do. Act Accordingly” (http://www.saltartists.com/the-most-dangerous-words/)"
+    words.note "magnanimously"     , "very generous or forgiving, esp. toward a rival or someone less powerful than oneself."
+    words.note "malapropism"       , "the mistaken use of a word in place of a similar-sounding one, often with unintentionally amusing effect, as in, for example, “dance a flamingo” (instead of flamenco)."
+    words.note "maudlin"           , "self-pityingly or tearfully sentimental, often through drunkenness"
+    words.note "maxim"             , "a short, pithy statement expressing a general truth or rule of conduct" , "aphorism", "adage", "maxim", "proverb", "platitude", "fable", "epigram"
+    words.note "meliorative"       , "to make better, opposite of pejorative"
+    words.note "mendacious"        , "not telling the truth; lying: mendacious propaganda."
+    words.note "misgiving"         , "a feeling of doubt or apprehension about the outcome or consequences of something"
+    words.note "monomania"         , "exaggerated or obsessive enthusiasm for or preoccupation with one thing"
+    words.note "moratorium"        , "a temporary prohibition of an activity"
+    words.note "mudita"            , "sympathetic or unselfish joy, or joy in the good fortune of others. In Buddhism, mudita is significant as one of the Four Immeasurables -- https://twitter.com/austinkleon/status/662288435823022080"
+    words.note "myasthenia"        , "a condition causing abnormal weakness of certain muscles"
+    words.note "natty"             , "(esp. of a person or an article of clothing) smart and fashionable"
+    words.note "ostentatious"      , "characterized by vulgar or pretentious display; designed to impress or attract notice"
+    words.note "ostentatious"      , "characterized by vulgar or pretentious display; designed to impress or attract notice"
+    words.note "palpable"          , "able to be touched or felt, (esp. of a feeling or atmosphere) so intense as to be almost touched or felt: a palpable sense of loss."
+    words.note "perennial"         , "lasting or existing for a long or apparently infinite time; enduring or continually recurring; apparently permanently engaged in a specified role or way of life"
+    words.note "perfidy"           , "deceitfulness; untrustworthiness."
+    words.note "performativity"    , "(my defn) speach which determines the identity of a person -- ie the language defines who the person is, rather than who they are dictating their language"
+    words.note "petulant"          , "childishly sulky or bad-tempered"
+    words.note "platitude"         , "a remark or statement, esp. one with a moral content, that has been used too often to be interesting or thoughtful" , "aphorism", "adage", "maxim", "proverb", "platitude", "fable", "epigram"
+    words.note "polymathy"         , "a person of wide-ranging knowledge or learning."
+    words.note "precipice"         , "a very steep rock face or cliff, sometimes figurative: the country was teetering on the precipice of political anarchy."
+    words.note "precipice"         , "a very steep rock face or cliff, typically a tall one"
+    words.note "precocious"        , "indicative of early development"
+    words.note "prescient"         , "having or showing knowledge of events before they take place: a prescient warning."
+    words.note "proclivity"        , "a tendency to choose or do something regularly; an inclination or predisposition toward a particular thing: a proclivity for hard work."
+    words.note "proclivity"        , "a tendency to choose or do something regularly; an inclination or predisposition toward a particular thing"
+    words.note "propensity"        , "an inclination or natural tendency to behave in a particular way: a propensity for violence"
+    words.note "proverb"           , "a short pithy saying in general use, stating a general truth or piece of advice." , "aphorism", "adage", "maxim", "proverb", "platitude", "fable", "epigram"
+    words.note "punitive"          , "inflicting or intended as punishment"
+    words.note "qualia"            , "the internal and subjective component of sense perceptions, arising from stimulation of the senses by phenomena."
+    words.note "querulously"       , "complaining in a petulant or whining manner"
+    words.note "quintessential"    , "representing the most perfect or typical example of a quality or class"
+    words.note "razzing"           , "tease (someone) playfully"
+    words.note "reconcile"         , "restore friendly relations between, cause to coexist in harmony, make (one account) consistent with another, settle (a disagreement), (reconcile someone to) make someone accept (a disagreeable or unwelcome thing)"
+    words.note "remonstrate"       , "make a forcefully reproachful protest"
+    words.note "reprobate"         , <<-DEFINITION
+      an unprincipled person (often used humorously or affectionately).
+      Christian Theology, archaic (esp. in Calvinism) a sinner who is not of the elect and is predestined to damnation.
+    DEFINITION
+    words.note "repudiate"         , "refuse to accept or be associated with"
+    words.note "requisition"       , "the appropriation of goods, esp. for military or public use"
+    words.note "ribald"            , "referring to sexual matters in an amusingly rude or irreverent way"
+    words.note "sardonic"          , "grimly mocking or cynical"
+    words.note "scalawag"          , "a person who behaves badly but in an amusingly mischievous rather than harmful way"
+    words.note "schadenfreude"     , <<-DEFINITION
+      Schadenfreude is pleasure derived from the misfortunes of others.
+      This word is taken from German and literally means "harm-joy".
+      It is the feeling of joy or pleasure when one sees another fail or suffer misfortune.
+    DEFINITION
+    words.note "simulacrum"        , "an unsatisfactory imitation or substitute: a bland simulacrum of American soul music"
+    words.note "stricture"         , <<-DEFINITION
+      1. a restriction on a person or activity
+      2. a sternly critical or censorious remark or instruction
+    DEFINITION
+    words.note "synthesize"        , "combine (a number of things) into a coherent whole"
+    words.note "taciturn"          , "reserved or uncommunicative in speech; saying little."
+    words.note "temerity"          , "excessive confidence or boldness; audacity"
+    words.note "trepidation"       , "a feeling of fear or agitation about something that may happen: the men set off in fear and trepidation."
+    words.note "trepidation"       , "a feeling of fear or agitation about something that may happen"
+    words.note "triage"            , "the process of determining the most important people or things from amongst a large number that require attention."
+    words.note "trope"             , "a significant or recurrent theme; a motif"
+    words.note "truculence"        , "eager or quick to argue or fight; aggressively defiant"
+    words.note "umbrage"           , "offense or annoyance"
+    words.note "urbane"            , "(of a person, esp. a man) suave, courteous, and refined in manner."
+    words.note "vagabond"          , "a person who wanders from place to place without a home or job"
+    words.note "valetudinarian"    , "a person who is unduly anxious about their health."
+    words.note "vernacular"        , "the terminology used by people belonging to a specified group or engaging in a specialized activity" , "argot", "vernacular", "lexicon"
+    words.note "vet"               , "make a careful and critical examination of"
+    words.note "vicissitudes"      , "a change of circumstances or fortune, typically one that is unwelcome or unpleasant"
   end
   puts CommandLineNotes::Binary.new(words, ARGV).stdout
 end
