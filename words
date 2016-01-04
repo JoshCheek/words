@@ -262,8 +262,6 @@ else
     words.note "abate"         , "(of something perceived as hostile, threatening, or negative) become less intense or widespread"
     words.note "incensed"      , "very angry; enraged: I was absolutely incensed."
     words.note "natty"         , "(esp. of a person or an article of clothing) smart and fashionable"
-    words.note "aphorism"      , "a pithy observation that contains a general truth, such as, \"if it ain't broke, don't fix it\""
-    words.note "epigram"       , "a pithy saying or remark expressing an idea in a clever and amusing way."
     words.note 'gaslighting'   , "manipulate (someone) by psychological means into questioning their own sanity"
     words.note 'gestalt'       , "Psychology - an organized whole that is perceived as more than the sum of its parts."
     words.note "razzing"       , "tease (someone) playfully"
@@ -306,12 +304,13 @@ else
     words.note 'leviathan'     , '(in biblical use) a sea monster, identified in different passages with the whale and the crocodile (e.g., Job 41, Ps. 74:14), and with the Devil (after Isa. 27:1).'
     words.note 'trepidation'   , 'a feeling of fear or agitation about something that may happen'
     words.note 'enervation'    , 'a feeling of being drained of energy or vitality'
-    words.note 'aphorism'      , 'a pithy observation that contains a general truth, such as, "if it ain\'t broke, don\'t fix it."',                   'aphorism', 'adage', 'maxim', 'proverb', 'platitude', 'fable'
-    words.note 'adage'         , 'a proverb or short statement expressing a general truth',                                                            'aphorism', 'adage', 'maxim', 'proverb', 'platitude', 'fable'
-    words.note 'maxim'         , 'a short, pithy statement expressing a general truth or rule of conduct',                                             'aphorism', 'adage', 'maxim', 'proverb', 'platitude', 'fable'
-    words.note 'proverb'       , 'a short pithy saying in general use, stating a general truth or piece of advice.',                                   'aphorism', 'adage', 'maxim', 'proverb', 'platitude', 'fable'
-    words.note 'platitude'     , 'a remark or statement, esp. one with a moral content, that has been used too often to be interesting or thoughtful', 'aphorism', 'adage', 'maxim', 'proverb', 'platitude', 'fable'
-    words.note 'fable'         , 'a short story, typically with animals as characters, conveying a moral.',                                            'aphorism', 'adage', 'maxim', 'proverb', 'platitude', 'fable'
+    words.note "epigram"       , "a pithy saying or remark expressing an idea in a clever and amusing way."                                            'aphorism', 'adage', 'maxim', 'proverb', 'platitude', 'fable', 'epigram'
+    words.note 'aphorism'      , 'a pithy observation that contains a general truth, such as, "if it ain\'t broke, don\'t fix it."',                   'aphorism', 'adage', 'maxim', 'proverb', 'platitude', 'fable', 'epigram'
+    words.note 'adage'         , 'a proverb or short statement expressing a general truth',                                                            'aphorism', 'adage', 'maxim', 'proverb', 'platitude', 'fable', 'epigram'
+    words.note 'maxim'         , 'a short, pithy statement expressing a general truth or rule of conduct',                                             'aphorism', 'adage', 'maxim', 'proverb', 'platitude', 'fable', 'epigram'
+    words.note 'proverb'       , 'a short pithy saying in general use, stating a general truth or piece of advice.',                                   'aphorism', 'adage', 'maxim', 'proverb', 'platitude', 'fable', 'epigram'
+    words.note 'platitude'     , 'a remark or statement, esp. one with a moral content, that has been used too often to be interesting or thoughtful', 'aphorism', 'adage', 'maxim', 'proverb', 'platitude', 'fable', 'epigram'
+    words.note 'fable'         , 'a short story, typically with animals as characters, conveying a moral.',                                            'aphorism', 'adage', 'maxim', 'proverb', 'platitude', 'fable', 'epigram'
     words.note 'ennui'         , 'a feeling of listlessness and dissatisfaction arising from a lack of occupation or excitement.'
     words.note 'performativity', '(my defn) speach which determines the identity of a person -- ie the language defines who the person is, rather than who they are dictating their language'
     words.note 'malapropism'   , 'the mistaken use of a word in place of a similar-sounding one, often with unintentionally amusing effect, as in, for example, “dance a flamingo” (instead of flamenco).'
@@ -320,6 +319,17 @@ else
     words.note "vernacular"    , "the terminology used by people belonging to a specified group or engaging in a specialized activity",  'argot', 'vernacular', 'lexicon'
     words.note "argot"         , "the jargon or slang of a particular group or class: teenage argot.",                                   'argot', 'vernacular', 'lexicon'
     words.note 'lexicon'       , 'the vocabulary of a person, language, or branch of knowledge'
+
+    words.note 'qualia'        , 'the internal and subjective component of sense perceptions, arising from stimulation of the senses by phenomena.'
+    words.note 'quintessential', 'representing the most perfect or typical example of a quality or class'
+    words.note 'ape'           , 'imitate the behavior or manner of (someone or something), esp. in an absurd or unthinking way'
+    words.note 'explanatory gap', 'the difficulty that physicalist theories of mind have in explaining how physical properties give rise to the way things feel when they are experienced'
+    words.note 'consonance'    , <<-DEFINITIONS
+      * Generally:  agreement or compatibility between opinions or actions.
+      * In prosody: the recurrence of similar sounds (especially consonants) in close proximity.
+      * In music:   the combination of notes that are in harmony with each other due to the relationship between their frequencies.
+    DEFINITIONS
+    words.note 'mendacious'   , 'not telling the truth; lying: mendacious propaganda.'
   end
   puts CommandLineNotes::Binary.new(words, ARGV).stdout
 end
