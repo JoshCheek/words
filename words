@@ -216,6 +216,7 @@ else
     words.note "benight"           , "envelop with social, intellectual, or moral darkness"
     words.note "brigand"           , "a member of a gang that ambushes and robs people in forests and mountains."
     words.note "buttonhole"        , "to detain in conversation by or as if by holding on to the outer garments of" , "I'm sorry I'm late. I was buttonholed by a coworker just as I was leaving my office."
+    words.note "burgeoning"        , "begin to grow or increase rapidly; flourish: manufacturers are keen to cash in on the burgeoning demand."
     words.note "cad"               , "a man who behaves dishonorably, esp. toward a woman"
     words.note "canard"            , "an unfounded rumor or story: the old canard that LA is a cultural wasteland."
     words.note "catechism"         , "a series of fixed questions, answers, or precepts used for instruction in other situations."
@@ -249,6 +250,7 @@ else
     words.note "frenetic"          , "fast and energetic in a rather wild and uncontrolled way"
     words.note "gaslighting"       , "manipulate (someone) by psychological means into questioning their own sanity"
     words.note "gerrymander"       , "manipulate the boundaries of (an electoral constituency) so as to favor one party or class."
+    words.note "gerontology"       , "the study of the social, psychological, cognitive, and biological aspects of aging."
     words.note "gestalt"           , "Psychology - an organized whole that is perceived as more than the sum of its parts."
     words.note "haptic"            , "of or relating to the sense of touch, in particular relating to the perception and manipulation of objects using the senses of touch and proprioception."
     words.note "humbug"            , "deceptive or false talk or behavior"
@@ -299,6 +301,7 @@ else
     words.note "qualia"            , "the internal and subjective component of sense perceptions, arising from stimulation of the senses by phenomena."
     words.note "querulously"       , "complaining in a petulant or whining manner"
     words.note "quintessential"    , "representing the most perfect or typical example of a quality or class"
+    words.note 'Quorum sensing'    , 'A system of stimuli and response correlated to population density. Many species of bacteria use quorum sensing to coordinate gene expression according to the density of their local population.'
     words.note "razzing"           , "tease (someone) playfully"
     words.note "reconcile"         , "restore friendly relations between, cause to coexist in harmony, make (one account) consistent with another, settle (a disagreement), (reconcile someone to) make someone accept (a disagreeable or unwelcome thing)"
     words.note "remonstrate"       , "make a forcefully reproachful protest"
@@ -325,7 +328,6 @@ else
     words.note "taciturn"          , "reserved or uncommunicative in speech; saying little."
     words.note "temerity"          , "excessive confidence or boldness; audacity"
     words.note "trepidation"       , "a feeling of fear or agitation about something that may happen: the men set off in fear and trepidation."
-    words.note "trepidation"       , "a feeling of fear or agitation about something that may happen"
     words.note "triage"            , "the process of determining the most important people or things from amongst a large number that require attention."
     words.note "trope"             , "a significant or recurrent theme; a motif"
     words.note "truculence"        , "eager or quick to argue or fight; aggressively defiant"
@@ -336,6 +338,12 @@ else
     words.note "vernacular"        , "the terminology used by people belonging to a specified group or engaging in a specialized activity" , "argot", "vernacular", "lexicon"
     words.note "vet"               , "make a careful and critical examination of"
     words.note "vicissitudes"      , "a change of circumstances or fortune, typically one that is unwelcome or unpleasant"
+    words.note "synchrony"         , "simultaneous action, development, or occurrence."
+    words.note "copious"           , "abundant in supply or quantity: she took copious notes."
+    words.note "beaucoup"          , "many or much"
+    words.note "vocaiton"          , "a strong feeling of suitability for a particular career or occupation"
+    words.note "extemporaneous"    , "spoken or done without preparation"
+    words.note "convalescing"      , "recover one's health and strength over a period of time after an illness or operation: he spent eight months convalescing after the stroke."
   end
   puts CommandLineNotes::Binary.new(words, ARGV).stdout
 end
