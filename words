@@ -213,6 +213,7 @@ else
     words.note "argot"             , "the jargon or slang of a particular group or class: teenage argot." , "argot", "vernacular", "lexicon"
     words.note "atavistic"         , "relating to or characterized by reversion to something ancient or ancestral"
     words.note "banal"             , "so lacking in originality as to be obvious and boring"
+    words.note "balkanize"         , "divide (a region or body) into smaller mutually hostile states or groups."
     words.note "benight"           , "envelop with social, intellectual, or moral darkness"
     words.note "brigand"           , "a member of a gang that ambushes and robs people in forests and mountains."
     words.note "buttonhole"        , "to detain in conversation by or as if by holding on to the outer garments of" , "I'm sorry I'm late. I was buttonholed by a coworker just as I was leaving my office."
@@ -222,6 +223,10 @@ else
     words.note "catechism"         , "a series of fixed questions, answers, or precepts used for instruction in other situations."
     words.note "circumspect"       , "wary and unwilling to take risks"
     words.note "coalesce"          , "come together and form one mass or whole"
+    words.note "collate"           , <<-DEFINITION
+      collect and combine (texts, information, or sets of figures) in proper order.
+      compare and analyze (texts or other data): these accounts he collated with his own experience.
+    DEFINITION
     words.note "confluence"        , "an act or process of merging: a major confluence of the world's financial markets."
     words.note "consanguinity"     , "relating to or denoting people descended from the same ancestor: consanguineous marriages"
     words.note "consonance"        , <<-DEFINITION
@@ -233,6 +238,7 @@ else
     words.note "coquette"          , "a woman who flirts."
     words.note "crib"              , "informal copy (another person's work) illicitly or without acknowledgment"
     words.note "culpable"          , "deserving blame"
+    words.note "demagogue"         , "a political leader who seeks support by appealing to popular desires and prejudices rather than by using rational argument"
     words.note "dilettante"        , "a person who cultivates an area of interest, such as the arts, without real commitment or knowledge"
     words.note "disparage"         , "regard or represent as being of little worth"
     words.note "enervation"        , "a feeling of being drained of energy or vitality"
@@ -261,6 +267,7 @@ else
     words.note "impasto"           , "the process or technique of laying on paint or pigment thickly so that it stands out from a surface."
     words.note "impetus"           , "the force that makes something happen or happen more quickly"
     words.note "incensed"          , "very angry; enraged: I was absolutely incensed."
+    words.note "intransigent"      , "unwilling or refusing to change one's views or to agree about something."
     words.note "interlocutor"      , "a person who takes part in a dialogue or conversation."
     words.note "intromission"      , "the action or process of inserting the penis into the vagina in sexual intercourse"
     words.note "inundated"         , "overwhelm (someone) with things or people to be dealt with"
@@ -280,7 +287,6 @@ else
     words.note "mudita"            , "sympathetic or unselfish joy, or joy in the good fortune of others. In Buddhism, mudita is significant as one of the Four Immeasurables -- https://twitter.com/austinkleon/status/662288435823022080"
     words.note "myasthenia"        , "a condition causing abnormal weakness of certain muscles"
     words.note "natty"             , "(esp. of a person or an article of clothing) smart and fashionable"
-    words.note "ostentatious"      , "characterized by vulgar or pretentious display; designed to impress or attract notice"
     words.note "ostentatious"      , "characterized by vulgar or pretentious display; designed to impress or attract notice"
     words.note "palpable"          , "able to be touched or felt, (esp. of a feeling or atmosphere) so intense as to be almost touched or felt: a palpable sense of loss."
     words.note "perennial"         , "lasting or existing for a long or apparently infinite time; enduring or continually recurring; apparently permanently engaged in a specified role or way of life"
@@ -313,6 +319,8 @@ else
     words.note "requisition"       , "the appropriation of goods, esp. for military or public use"
     words.note "ribald"            , "referring to sexual matters in an amusingly rude or irreverent way"
     words.note "sardonic"          , "grimly mocking or cynical"
+    words.note "semiosis"          , "the conversion of objective signals into conventional signs / the process of signification in language or literature."
+    words.note "sequester"         , "isolate or hide away (someone or something)"
     words.note "scalawag"          , "a person who behaves badly but in an amusingly mischievous rather than harmful way"
     words.note "schadenfreude"     , <<-DEFINITION
       Schadenfreude is pleasure derived from the misfortunes of others.
@@ -324,6 +332,7 @@ else
       1. a restriction on a person or activity
       2. a sternly critical or censorious remark or instruction
     DEFINITION
+    words.note "superlative"       , "expressing the highest or a very high degree of a quality"
     words.note "synthesize"        , "combine (a number of things) into a coherent whole"
     words.note "taciturn"          , "reserved or uncommunicative in speech; saying little."
     words.note "temerity"          , "excessive confidence or boldness; audacity"
@@ -344,6 +353,7 @@ else
     words.note "vocaiton"          , "a strong feeling of suitability for a particular career or occupation"
     words.note "extemporaneous"    , "spoken or done without preparation"
     words.note "convalescing"      , "recover one's health and strength over a period of time after an illness or operation: he spent eight months convalescing after the stroke."
+    words.note "peremptory"        , "(especially of a person's manner or actions) insisting on immediate attention or obedience, especially in a brusquely imperious way: “Just do it!” came the peremptory reply."
   end
   puts CommandLineNotes::Binary.new(words, ARGV).stdout
 end
