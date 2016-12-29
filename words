@@ -275,6 +275,7 @@ else
     words.note "leviathan"         , "(in biblical use) a sea monster, identified in different passages with the whale and the crocodile (e.g., Job 41, Ps. 74:14), and with the Devil (after Isa. 27:1)."
     words.note "lexicon"           , "the vocabulary of a person, language, or branch of knowledge"
     words.note "lifspeki"          , "to show who you are to yourself and to the world through your actions, “You Have Exactly One Life in Which to Do Everything You’ll Ever Do. Act Accordingly” (http://www.saltartists.com/the-most-dangerous-words/)"
+    words.note "machination"       , "a scheming or crafty action or artful design intended to accomplish some usually evil end"
     words.note "magnanimously"     , "very generous or forgiving, esp. toward a rival or someone less powerful than oneself."
     words.note "malapropism"       , "the mistaken use of a word in place of a similar-sounding one, often with unintentionally amusing effect, as in, for example, “dance a flamingo” (instead of flamenco)."
     words.note "maudlin"           , "self-pityingly or tearfully sentimental, often through drunkenness"
@@ -310,6 +311,7 @@ else
     words.note 'Quorum sensing'    , 'A system of stimuli and response correlated to population density. Many species of bacteria use quorum sensing to coordinate gene expression according to the density of their local population.'
     words.note "razzing"           , "tease (someone) playfully"
     words.note "reconcile"         , "restore friendly relations between, cause to coexist in harmony, make (one account) consistent with another, settle (a disagreement), (reconcile someone to) make someone accept (a disagreeable or unwelcome thing)"
+    words.note "relegate"          , "consign or dismiss to an inferior rank or position"
     words.note "remonstrate"       , "make a forcefully reproachful protest"
     words.note "reprobate"         , <<-DEFINITION
       an unprincipled person (often used humorously or affectionately).
