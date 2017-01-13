@@ -198,6 +198,7 @@ else
     words.description = "A list of words I like and don't want to forget"
 
     words.note "abate"             , "(of something perceived as hostile, threatening, or negative) become less intense or widespread"
+    words.note "acquisitive"       , "excessively interested in acquiring money or material things."
     words.note "adage"             , "a proverb or short statement expressing a general truth" , "aphorism", "adage", "maxim", "proverb", "platitude", "fable", "epigram"
     words.note "adjudicate"        , "make a formal judgment or decision about a problem or disputed matter: the committee adjudicates on all betting disputes"
     words.note "anhedonia"         , "inability to feel pleasure"
